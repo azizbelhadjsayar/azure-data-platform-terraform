@@ -1,0 +1,10 @@
+services:
+  tools:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.tools
+    volumes:
+      - ..:/workspace
+    env_file:
+      - ../.env
+    working_dir: /workspace
